@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header (Bootstrap Navigation) -->
+    <header class="bg-white shadow-lg p-4">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-blue-500 font-bold" href="#">Troland</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-gray-600" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-gray-600" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-gray-600" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link text-gray-600" href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Tailwind CSS) -->
+    <section id="hero" class="bg-blue-500 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Roland Landing Page</h2>
+            <p class="mt-4 text-lg">A page full of dreams</p>
+            <button class="mt-6 px-4 py-2 bg-white text-blue-500 font-semibold rounded hover:bg-blue-600 hover:text-white">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section (Tailwind CSS) -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-4 shadow-md text-center">
+                <h3 class="font-bold text-lg">Our Mission</h3>
+                <p class="mt-2 text-gray-600">Dedicated to excellence</p>
+            </div>
+            <div class="bg-white p-4 shadow-md text-center">
+                <h3 class="font-bold text-lg">Our Vision</h3>
+                <p class="mt-2 text-gray-600">Innovating for the future</p>
+            </div>
+            <div class="bg-white p-4 shadow-md text-center">
+                <h3 class="font-bold text-lg">Our Values</h3>
+                <p class="mt-2 text-gray-600">Integrity and honesty</p>
+            </div>
+            <div class="bg-white p-4 shadow-md text-center">
+                <h3 class="font-bold text-lg">Our Goals</h3>
+                <p class="mt-2 text-gray-600">To be a leader in the industry</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Bootstrap Carousel) -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container text-center">
+            <h2 class="text-3xl font-bold mb-8">What Our Clients Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="text-gray-600">"Great service and amazing support!"</p>
+                        <h3 class="font-bold">- John Kun</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-gray-600">"Highly recommend this company."</p>
+                        <h3 class="font-bold">- Lucas Gadgets</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-gray-600">"Fantastic experience every time!"</p>
+                        <h3 class="font-bold">- The Printer Guy</h3>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery (Tailwind CSS) -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img src="https://via.placeholder.com/150" alt="Gallery Image" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/150" alt="Gallery Image" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/150" alt="Gallery Image" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/150" alt="Gallery Image" class="w-full h-48 object-cover rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Tailwind CSS) -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Troland. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="hover:text-blue-400">Facebook</a>
+                <a href="#" class="hover:text-blue-400">Twitter</a>
+                <a href="#" class="hover:text-blue-400">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
